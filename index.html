@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>The Hockey Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/baron.jpg");
+    min-height: 90%;
+}
+.menu {
+    display: none;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+
+</style>
+
+<body>
+
+
+<!-- Links (sit on top,) -->
+<!-- <div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-btn-block w3-hover-white">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-btn-block w3-hover-white">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-btn-block w3-hover-white">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-btn-block w3-hover-white">WHERE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-btn-block w3-hover-white">WHERE</a>
+    </div>
+    
+  </div>
+</div>
+ -->
+ <ul class="w3-navbar w3-light-grey">
+    <li> <a href="index.html" class="w3-btn-block w3-hover-white">HOME</a></li>
+    <li> <a href="index.html#about" class="w3-btn-block w3-hover-white">OUR SHOP</a></li>
+    <li> <a href="index.html#menu" class="w3-btn-block w3-hover-white">OUR PRODUCTS</a></li>
+    <li> <a href="index.html#where" class="w3-btn-block w3-hover-white">WHERE TO FIND US</a></li>
+    <li class="w3-dropdown-hover">
+      <a href="#" class="w3-btn-block w3-hover-white">EXPLORE</a>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="index.html">The Shop</a>
+        <a href="blog.html">The Blog</a>
+        <a href="page3.html">Inline Hockey</a>
+        <a href="page4.html">Repairs</a>
+        <a href="page5.html">NHL Gear</a>
+      </div>
+    </li>
+  </ul>
+
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-xlarge w3-hide-small">
+    <span class="w3-tag">Open from 9am to 6pm</span>
+  </div>
+
+  <div class="w3-display-bottomright w3-center w3-padding-xlarge">
+    <span class="w3-tag">123 Fake Street</span>
+  </div>
+</header>
+
+
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">BARON'S HOCKEY SHOP</span></h5>
+    <p>The shop was founded by David Baron in 2012. Baron has been a small business owner all his life and his passion is hockey. He wants Baron's to be part your family.</p>
+    <p> Our knowledgeable staff is ready and willing to help you with any of your hockey needs. </p>
+    <table style="width:100%">
+  <caption>Shop With Us and Save!!!</caption>
+  <tr>
+    <th>Brands</th>
+    <th>Average Savings</th>
+    <th>Rewards</th>
+    <th>Team Discounts</th>
+
+  </tr>
+  <tr>
+    <td>Easton</td>
+    <td>20%</td>
+    <td>All Full Price Purchases</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>Bauer</td>
+    <td>20%</td>
+    <td>All Full Price Purchases</td>
+     <td>N/A</td>
+  </tr>
+  <tr>
+    <td>Warrior</td>
+    <td>25%</td>
+    <td>All Full Price Purchases</td>
+     <td>N/A</td>
+  </tr> 
+  <tr>
+    <td>CCM</td>
+    <td>10%</td>
+    <td>All Full Price Purchases</td>
+     <td>10%</td>
+  </tr>
+</table>
+
+    <img src="images/storefront.jpg" alt="Smiley face" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> Everyday from 9am to 6pm.</p>
+    <p><strong>Address:</strong> 123 Fake street, 5015, IL</p>
+  </div>
+</div>
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">OUR PRODUCTS</span></h5>
+  
+
+     <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Player</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Goalie</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Sticks</h5>
+      <p class="w3-text-grey">We offer all of today's best brands.</p><br>
+    
+      <h5>Skates</h5>
+      <p class="w3-text-grey">We offer all of the top brands in skates</p><br>
+    
+      <h5>Gloves</h5>
+      <p class="w3-text-grey">We have all of the best brands of gloves.</p><br>
+    
+      <h5>Protective</h5>
+      <p class="w3-text-grey">We have pants, shin pads, elbow pads, and mouth guards</p>
+  </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Goalie Sticks</h5>
+      <p class="w3-text-grey">We offer all of today's best Goalie brands.</p><br>
+    
+      <h5>Goalie Skates</h5>
+      <p class="w3-text-grey">We offer all of the top brands in goalie skates</p><br>
+    
+      <h5>Blockers</h5>
+      <p class="w3-text-grey">We have all of the best brands of blockers.</p><br>
+    
+      <h5>Gloves</h5>
+      <p class="w3-text-grey">We have a full line of goalie gloves</p>
+    </div>
+    <img src="images/shop.jpg" alt="shop" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">WHERE TO FIND US</span></h5>
+    <p>Find us at 123 Fake Street, Chicago, IL.</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
+    <p><span class="w3-tag">FYI!</span> We offer full-service line of customization of any stock products.</p>
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+// Google Map Location
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

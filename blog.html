@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<title>The Hockey Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/blog.jpg");
+    min-height: 90%;
+}
+.menu {
+    display: none;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+
+</style>
+
+
+<!-- Links (sit on top) -->
+
+<ul class="w3-navbar w3-light-grey">
+    <li> <a href="index.html" class="w3-btn-block w3-hover-white">HOME</a></li>
+    <li> <a href="blog.html#about" class="w3-btn-block w3-hover-white">HOCKEY BLOG</a></li>
+    <li> <a href="blog.html#menu" class="w3-btn-block w3-hover-white">TOPICS COVERED</a></li>
+    <li> <a href="blog.html#where" class="w3-btn-block w3-hover-white">CONTACT US</a></li>
+    <li class="w3-dropdown-hover">
+      <a href="#" class="w3-btn-block w3-hover-white">EXPLORE</a>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="index.html">The Shop</a>
+        <a href="blog.html">The Blog</a>
+        <a href="page3.html">Inline Hockey</a>
+        <a href="page4.html">Repairs</a>
+        <a href="page5.html">NHL Gear</a>
+      </div>
+    </li>
+  </ul>
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-xlarge w3-hide-small">
+    <span class="w3-tag">ALL HOCKEY!!!</span>
+  </div>
+
+  <div class="w3-display-bottomright w3-center w3-padding-xlarge">
+    <span class="w3-tag">ALL THE TIME!!!</span>
+  </div>
+</header>
+
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">BARON'S HOCKEY BLOG</span></h5>
+    <p> Our blog covers all the latest NHL News and hockey equipment.</p>
+    <p> Follow all of the lastest breaking NHL news and stories right here at the Baron's Hockey Blog.</p>
+
+    <img src="images/dustin.jpg" alt="Smiley face" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Dustin Byfuglien</strong> of the Winnipeg Jets.</p>
+    <p><strong>Follow us on twitter:</strong> @BaronsHockeyBlg</p>
+  </div>
+</div>
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">TOPICS COVERED</span></h5>
+  
+
+     <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">In The NHL</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Products</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Style 101</h5>
+      <p class="w3-text-grey">Hockey Style 101.</p><br>
+    
+      <h5>Young Guns</h5>
+      <p class="w3-text-grey">These mites and squirts have skills.</p><br>
+    
+      <h5>Sick Dangles</h5>
+      <p class="w3-text-grey">Does he have that puck on a string?</p><br>
+    
+      <h5>Flow</h5>
+      <p class="w3-text-grey">Hair so good that the ladies get jealous.</p>
+  </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Tutorials</h5>
+      <p class="w3-text-grey">"How Tos" for all your hockey favorites.</p><br>
+    
+      <h5>Product Reviews</h5>
+      <p class="w3-text-grey">Lets you know how all the newest products are before you buy them.</p><br>
+    
+      <h5>Q and A</h5>
+      <p class="w3-text-grey">I answer questions every Tuesday.</p><br>
+    
+      <h5>Misc.</h5>
+      <p class="w3-text-grey">ANYTHING ELSE you could ever want to know about hockey.</p>
+    </div>
+    <img src="images/tape.jpg" alt="tape" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">CONTACT US</span></h5>
+    <p>E-Mail Us At BaronHockeyBlog.com or click the link below for a free tutorial.</p>
+    <ul>
+  <li><a href="https://www.youtube.com/watch?v=RzPP292HHds">How To Tape A Hockey Stick</a></li>
+  </ul>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+// Google Map Location
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

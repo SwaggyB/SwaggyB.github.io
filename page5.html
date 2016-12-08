@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<title>NHL Merchandise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: contain;
+    background-image: url("images/biglogo.jpg");
+    min-height: 90%;
+}
+.menu {
+    display: none;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+
+</style>
+
+<!-- Links (sit on top) -->
+<ul class="w3-navbar w3-light-grey">
+    <li> <a href="index.html" class="w3-btn-block w3-hover-white">HOME</a></li>
+    <li> <a href="page5.html#about" class="w3-btn-block w3-hover-white">NHL MERCHADISE</a></li>
+    <li> <a href="page5.html#menu" class="w3-btn-block w3-hover-white">NHL PRODUCTS</a></li>
+    <li> <a href="page5.html#where" class="w3-btn-block w3-hover-white">CUSTOMIZE</a></li>
+    <li class="w3-dropdown-hover">
+      <a href="#" class="w3-btn-block w3-hover-white">EXPLORE</a>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="index.html">The Shop</a>
+        <a href="blog.html">The Blog</a>
+        <a href="page3.html">Inline Hockey</a>
+        <a href="page4.html">Repairs</a>
+        <a href="page5.html">NHL Gear</a>
+
+      </div>
+    </li>
+  </ul>
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-xlarge w3-hide-small">
+    <span class="w3-tag">WE SELL GEAR FROM ALL 30 TEAMS!!!</span>
+  </div>
+
+  <div class="w3-display-bottomright w3-center w3-padding-xlarge">
+    <span class="w3-tag">WEAR WHAT THE PROS WEAR!!!</span>
+  </div>
+</header>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">WE SELL OFFICALLY LICENSED NHL MERCHADISE</span></h5>
+    <p> No matter what team you root for, we have you covered from head to toe.</p>
+   
+
+    <img src="images/subban.jpg" alt="subban" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Youth sizes are also available.</strong></p>
+  </div>
+</div>
+
+    <table style="width:100%">
+  <caption>Shop With Us and Save!!!</caption>
+  <tr>
+    <th>Brands</th>
+    <th>Sizes</th>
+    <th>Custom Option (Y/N)</th>
+    <th>Price ($)</th>
+
+  </tr>
+  <tr>
+    <td>ADIDAS</td>
+    <td>XS-XXL</td>
+    <td>Y</td>
+    <td>$120.00</td>
+  </tr>
+  <tr>
+    <td>NIKE</td>
+    <td>XS-XXL</td>
+    <td>Y</td>
+     <td>$99.99</td>
+  </tr>
+  <tr>
+    <td>REEBOK</td>
+    <td>XS-XXL</td>
+    <td>Y</td>
+     <td>$75.99</td>
+  </tr> 
+  <tr>
+    <td>CCM</td>
+    <td>XS-XXL</td>
+    <td>Y</td>
+     <td>$85.99</td>
+  </tr>
+</table>
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">NHL PRODUCTS</span></h5>
+  
+
+     <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">MEN</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">WOMEN</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Headwear</h5>
+      <p class="w3-text-grey">Men's hats, beanies, and headbands.</p><br>
+    
+      <h5>Jerseys</h5>
+      <p class="w3-text-grey">Men's jerseys in all sizes.</p><br>
+    
+      <h5>Outerwear</h5>
+      <p class="w3-text-grey">A complete line of men's jackets, vest, and sweatshirts..</p><br>
+    
+      <h5>Tee Shirts</h5>
+      <p class="w3-text-grey">Men's tee shirts in all sizes.</p>
+  </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Headwear</h5>
+      <p class="w3-text-grey">Women's hats, beanies, and headbands.</p><br>
+    
+      <h5>Jerseys</h5>
+      <p class="w3-text-grey">Women's jerseys in all sizes.</p><br>
+    
+      <h5>Outerwear</h5>
+      <p class="w3-text-grey">A complete line of women's jackets, vest, and sweatshirts.</p><br>
+    
+      <h5>Tee Shirts</h5>
+      <p class="w3-text-grey">Women's tee shirts in all sizes.</p>
+    </div>
+    <img src="images/bruins.jpg" alt="bruins" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">CUSTOME NAME AND NUMBER JERSEYS AVAILABLE</span></h5>
+    <p>Click Below For More Information on the National Hockey Leauge:</p>
+    <ul>
+  <li><a href="https://www.nhl.com">THE NHL'S OFFICAL SITE</a></li>
+  </ul>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+// Google Map Location
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
